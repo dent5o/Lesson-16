@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson-16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <!-- form-1 -->
+            <section class="form-1">
+                <div class="form-1__container">
+                    <form action="" class="appointment">
+                        <h3 class="form-1__title">
+                            Make an appointment
+                        </h3>
+                        <div class="form-1__inputs inputs-block">
+                            <div class="inputs-block__element">
+                                <input type="text" class="inputs-block__name" placeholder="Name" required autocomplete="off">
+                            </div>
+                            <div class="inputs-block__element">
+                                <input type="email" class="inputs-block__email" placeholder="Email" required autocomplete="off">
+                            </div>
+                            <div class="inputs-block__element">
+                                <input type="tel" class="inputs-block__phone" 
+                                placeholder="Phone Number" required autocomplete="off">
+                            </div>
+                            <div class="inputs-block__element">
+                                <input type="text" class="inputs-block__service" placeholder="Select Service" required autocomplete="off">
+                            </div>
+                        </div>
+                        <textarea class="form-1__text tell-us" placeholder="Tell us about your puppers include his/her name"></textarea>
+                        <button class="appointment-button" type="submit">
+                            Make an Appointment
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- form-2 -->
+            <section class="form-2">
+                <div class="form-2__container">
+                    <form action="" class="form-summary">
+                        <h3 class="form-summary__title">
+                            Summary
+                        </h3>
+                        <div class="form-summary__adress subtitle">
+                            Estimate Shipping and Tax
+                        </div>
+                        <div class="form-summary__help-text">
+                            Enter your destination to get a shipping estimate.
+                        </div>
+                        <label for="country">Country</label>
+                        <select name="country" id="country" class="form-summary__country-select">
+                            <option value="1">Austria</option>
+                            <option value="2">Poland</option>
+                            <option selected value="3">Ukraine</option>
+                            <option value="4">Germany</option>
+                        </select>
+                        <label for="state">State/Province</label>
+                        <input type="text" class="form-summary__state-select" id="state">
+                        <label for="postcode">Zip/Postal Code</label>
+                        <input type="number" class="form-summary__post-code" id="postcode">
+                        <div class="form-summary__radio-buttons">
+                            <div class="form-summary__radio-button button-radio">
+                                <div class="button-radio__label">Standard Rate</div>
+                                <input type="radio" required name="rate" id="radio-1" checked>
+                                <label for="radio-1">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                            </div>
+                            <div class="form-summary__radio-button button-radio">
+                                <div class="button-radio__label">Pickup from store</div>
+                                <input type="radio" required name="rate" id="radio-2">
+                                <label for="radio-2">1234 Street Adress City Address, 1234 $0.00</label>
+                            </div>
+                        </div>
+                        <div class="form-summary__discount subtitle">Apply Discount Code
+                        </div>
+                        <label for="discount">Enter discount code</label>
+                        <input type="number" class="form-summary__discount-code" id="discount" placeholder="Enter discount code" >
+                        <button class="form-summary__button button" type="submit">
+                            Apply Discount
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- form-3 -->
+            <section class="form-3">
+                <div class="form-3__container">
+                    <form action="" class="register-form">
+                        <div class="register-form__title">
+                            Registered Customers
+                        </div>
+                        <div class="register-form__help-text">
+                            If you have an account, sign in with your email address.
+                        </div>
+                        <div class="register-form__inputs inputs">
+                            <label for="email">Email <span>*</span></label>
+                            <input class="inputs__element" type="email" required id="email" placeholder="Your Email">
+                            <label for="pass">Password <span>*</span></label>
+                            <input class="inputs__element" type="password" required id="pass" placeholder="Your Password">
+                        </div>
+                        <div class="register-form__buttons">
+                            <button class="register-form__button button_blue">Sign In</button>
+                            <a class="register-form__pass-link" href="#">Forgot Your Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- form-4 -->
+            <section class="form-4">
+                <div class="form-3__container">
+                    <form action="" class="checkout-form">
+                        <div class="checkout-form__title-block">
+                            <div class="checkout-form__title">
+                                Checkout
+                            </div>
+                            <button class="checkout__sign button">Sign In</button>
+                        </div>
+                        <div class="checkout-form__help-text">
+                            Shipping Address
+                        </div>
+                        <div class="checkout-form__inputs">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" required id="email">
+                            <div class="checkout-form__info-text">
+                                You can create an account after checkout.
+                            </div>
+                            <label for="first-name" class="label_padding">First Name <span>*</span></label>
+                            <input type="text" required id="first-name">
+                            <label for="last-name">Last Name <span>*</span></label>
+                            <input type="text" required id="last-name">
+                            <label for="company">Company <span>*</span></label>
+                            <input type="text" required id="company">
+                            <label for="street-address">Street Address <span>*</span></label>
+                            <input type="text" required id="street-address">
+                            <input type="text" required id="street-address">
+                            <label for="city">City <span>*</span></label>
+                            <input type="text" required id="city">
+                            <label for="state">State/Province <span>*</span></label>
+                            <select name="state" id="state" class="checkout-form__state-select">
+                                <option value="1">Select</option>
+                                <option value="2">Select</option>
+                                <option selected value="3">Please, select a region, state or province</option>
+                                <option value="4">Select</option>
+                                <option value="5">Select</option>
+                                <option value="6">Select</option>
+                            </select>
+                            <label for="post-code">Zip/Postal Cod <span>*</span></label>
+                            <input type="number" required id="post-code">
+                            <label for="country">Country <span>*</span></label>
+                            <select name="country" id="country" class="checkout-form__country-select">
+                            <option value="1">Austria</option>
+                            <option value="2">Poland</option>
+                            <option selected value="3">Ukraine</option>
+                            <option value="4">Germany</option>
+                            </select>
+                            <label for="phone">Phone Number <span>*</span></label>
+                            <input type="tel" required id="phone">
+                        </div>
+                        <div class="checkout-form__radio-buttons">
+                            <div class="checkout-form__radio-button button-radio">
+                                <div class="button-radio__label">
+                                    Standard Rate
+                                </div>
+                                <div class="button-radio__block">
+                                    <input type="radio" name="price" id="price-1" required checked>
+                                    <label for="price-1">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                                    <div class="button-radio__price">$21.00</div>
+                                </div>
+                            </div>
+                            <div class="checkout-form__radio-button button-radio">
+                                <div class="button-radio__label">
+                                    Pickup from store
+                                </div>
+                                <div class="button-radio__block">
+                                    <input type="radio" name="price" id="price-2" required>
+                                    <label for="price-2">1234 Street Adress City Address, 1234</label>
+                                    <div class="button-radio__price">$0.00</div>
+                                </div>
+                            </div>
+                            <button class="checkout-form__button button_blue">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+</html>

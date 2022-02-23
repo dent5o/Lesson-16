@@ -1,0 +1,519 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,600&display=swap);
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px; /* по умолчанию */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;	
+}
+.main {
+	flex-grow: 1;
+}
+
+/* ------------------------------ */
+
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.header {
+	padding: 15px 0px 15px 0px;
+	background: #29C3BE;
+}
+
+/* FORM-1 */
+
+.form-1 {
+	padding: 130px 0px;
+}
+.form-1__container {
+}
+.appointment {
+	display: flex;
+	flex-direction: column;
+	max-width: 585px;
+	background: #5D62B5;
+	border-radius: 40px;
+	padding: 76px 57px;
+	margin: 0px auto;
+}
+.form-1__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0px 0px 48px 0px;
+}
+.form-1__inputs:not(:last-child) {
+	margin-bottom: 22px;
+}
+.inputs-block {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 22px;
+	margin: 0px -11px;
+}
+.inputs-block__element {
+	padding: 0px 11px;
+}
+.inputs-block__element input {
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	background-color: transparent;
+	color: #FFFFFF;
+	padding: 17px 26px 15px 25px;
+	opacity: 0.8;
+	transition: all 1s ease;
+}
+.inputs-block__element input:hover {
+	border: 2px solid #F2726F;
+}
+.inputs-block__element input::placeholder {
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+	font-size: 16px;
+	transition: all 1s ease;
+}
+.inputs-block__element input:focus {
+	outline: none;
+	opacity: 1;
+}
+.inputs-block__element input:focus::placeholder {
+	transform: translate(-100%, 0px);
+}
+.inputs-block__name {
+}		
+.inputs-block__email {
+}
+.inputs-block__phone {
+}
+.inputs-block__service {
+}
+.form-1__text {
+	margin: 0px 0px 30px 0px;
+}
+.tell-us {
+	display: flex;
+	flex: 0 1 auto;
+	width: 100%;
+	height: 180px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	background-color: transparent;
+	color: #FFFFFF;
+	padding: 17px 23px 15px 23px;
+	opacity: 0.8;
+	resize: none;
+	transition: all 1s ease;
+}
+.tell-us::placeholder {
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+	font-size: 16px;
+	transition: all 1s ease;
+}
+.tell-us:hover {
+	border: 2px solid #F2726F;
+}
+.tell-us:focus {
+	outline: none;
+	opacity: 1;
+}
+.tell-us:focus::placeholder {
+	transform: translate(-110%, 0px);
+}
+.appointment-button {
+	background: #F2726F;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 12px 31px;
+	align-self: flex-end;
+	cursor: pointer;
+	position: relative;
+}
+.appointment-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 48px;
+	border-radius: 8px;
+	transition: all 1s ease;
+	background: rgba(255,255,255,0.3);
+}
+.appointment-button:hover::before {
+	width: 100%;
+}
+.appointment-button:focus {
+	outline: none;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+/* FORM-2 */
+
+.form-2 {
+	font-family: "Poppins";
+	color: #000000;
+	padding: 0px 0px 130px 0px;
+}
+.form-2__container {
+}
+.form-summary {
+	display: flex;
+	flex-direction: column;
+	padding: 17px 30px;
+	max-width: 446px;
+	background: #F5F7FF;
+	margin: 0px auto;
+}
+.form-summary label, .button-radio__label {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	padding: 10px 0px 6px 0px;
+}
+.form-summary__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 0px 0px 19px 0px;
+}
+.form-summary input, select {
+	background: #FFFFFF;
+	border: 1px solid #A2A6B0;
+	border-radius: 4px;
+	padding: 15px 0px 15px 17px;
+}
+.form-summary input::placeholder {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #A2A6B0;
+}
+.form-summary__adress:not(:last-child) {
+	margin: 0px 0px 12px 0px;
+}
+.subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.form-summary__help-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #666666;
+	max-width: 287px;
+	margin: 0px 0px 12px 0px;
+}
+.form-summary__country-select {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+}
+.form-summary__state-select {
+}
+.form-summary__post-code:not(:last-child) {
+	margin: 0px 0px 17px 0px;
+}
+.form-summary__radio-button label {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+}
+.form-summary__radio-buttons {
+	margin: 0px 0px 26px 0px;
+}
+.form-summary__discount {
+}
+.form-summary__discount-code:not(:last-child) {
+	margin: 0px 0px 19px 0px;
+}
+.button {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	color: #0156FF;
+	border: 2px solid #0156FF;
+	border-radius: 50px;
+	padding: 12px 0px 12px 0px;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.button:hover {
+	background: #0156FF;
+	color: #FFFFFF;
+}
+
+/* FORM-3 */
+
+.form-3 {
+	font-family: "Poppins";
+	color: #000000;
+	padding: 0px 0px 130px 0px;
+}
+.form-3__container {
+}
+.register-form {
+	max-width: 564px;
+	padding: 37px 56px 41px 56px;
+	background: #F5F7FF;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;;
+}
+.register-form__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.register-form__help-text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 2.14;
+}
+.register-form label {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+span {
+	color: #C94D3F;
+}
+.register-form input::placeholder {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #A2A6B0;
+}
+.register-form input {
+	background: #FFFFFF;
+	border: 1px solid #A2A6B0;
+	border-radius: 4px;
+	padding: 16px 0px 16px 17px;
+}
+.register-form__inputs{
+	margin: 0px 0px 30px 0px;
+}
+.inputs {
+	display: flex;
+	flex-direction: column;
+}
+.inputs__element:not(:last-of-type) {
+	margin-bottom: 6px;
+}
+.register-form__buttons {
+	display: flex;
+	row-gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.button_blue {
+	background: #0156FF;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 14px 52px 14px 52px;
+	cursor: pointer;
+	border: 2px solid #0156FF;
+	transition: all 1s ease;
+}
+.button_blue:hover{
+	background: #ffffff;
+	color: #0156FF;
+}
+.register-form__button:focus, .register-form__pass-link:focus {
+	outline: none;
+}
+.register-form__pass-link {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #0156FF;
+	padding: 0px 0px 0px 23px;
+}
+
+/* FORM-4 */
+
+.form-4 {
+	font-family: "Poppins";
+	color: #000000;
+	padding: 0px 54px 0px 87px;
+}
+.form-3__container {
+}
+.checkout-form {
+	max-width: 924px;
+	display: flex;
+	flex-direction: column;
+}
+.checkout-form__title-block {
+	display: flex;
+	margin: 0px 0px 43px 0px;
+}
+.checkout-form__title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.5;
+}
+.checkout-form__title:not(:last-child) {
+	padding: 0px 30px 0px 0px;
+}
+.checkout__sign {
+	padding: 12px 78px;
+}
+.button {
+}
+.checkout-form__help-text {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	border-bottom: 1px solid #CACDD8;
+	padding: 0px 0px 14px 0px;
+}
+.checkout-form__inputs {
+	display: flex;
+	flex-direction: column;
+	max-width: 567px;
+	padding: 25px 0px 32px 0px;
+}
+.checkout-form input, select {
+	background: #FFFFFF;
+	border: 1px solid #A2A6B0;
+	border-radius: 4px;
+	padding: 16px 0px 16px 17px;
+}
+.checkout-form input:not(:last-child) {
+	margin: 0px 0px 12px 0px;
+}
+.checkout-form label {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+.email-input {
+}
+.checkout-form__info-text {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #666666;
+	border-bottom: 1px solid #CACDD8;
+	padding: 0px 0px 20px 0px;
+}
+.label_padding {
+	padding: 21px 0px 0px 0px;
+}
+.checkout-form__state-select {
+}
+.checkout-form__country-select {
+}
+.checkout-form__radio-buttons {
+	padding: 8px 0px 30px 0px;
+	border-top: 1px solid #CACDD8;
+}
+.checkout-form__radio-button:last-of-type {
+	margin: 0px 0px 30px 0px;
+}
+.button-radio__label {
+}
+.button-radio__block {
+	display: flex;
+	align-items: baseline;
+}
+.button-radio label {
+	flex: 0 1 604px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	padding: 0px 50px 0px 0px;
+}
+.button-radio__price {
+	align-self: flex-start;
+}
+.checkout-form__button {
+}
+.button_blue {
+}
+
+/* FOOTER */
+
+.footer {
+	padding: 15px 0px;
+	background: #29C3BE;
+}
